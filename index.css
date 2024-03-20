@@ -1,0 +1,612 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+/* The Navigation */
+.navigation{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    background:#001f3f;
+    padding:25px 250px;
+    position:sticky;
+    top:0;
+    bottom:0;
+    z-index:1;
+    /* background:linear-gradient(to right, rgba(65,105,255,0.6), rgba(255,0,0,.6));
+    padding:20px 250px; */
+}
+/* .navigation h3{
+    width:20%;
+    color:#fff;
+    font-size:30px;
+} */
+.navigation ul{
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    width:70%;  
+    margin:0 auto;
+}
+.navigation ul li{
+    list-style:none;
+}
+.navigation ul li a{
+    padding:0 20px;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-size:18px;
+    color:#fff;
+    text-decoration:none;
+}
+.subscribe{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    width:15%;
+    margin:0 auto;
+}
+.subscribe p{
+    text-transform:capitalize;
+    font-size:18px;
+    color:#fff;
+}
+.subscribe a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:black;
+    font-style:bold;
+    font-size:18px;
+    color:#fff;
+}
+.subscribe i{
+    color:#fff;
+}
+.bar,.cancel{
+    display:none;
+}
+/* End of Navigation */
+
+/* The Content */
+.main-section{
+    /* padding:50px 250px; */
+    position:relative;
+}
+/* New news layout */
+.main-news-container{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+    padding:0 250px;
+    margin:30px 0 0;
+}
+.firstnews-box,.secondnews-box{
+    width:49%;
+}
+.firstnews-box{
+    background:url(../images/istockphoto-1568199725-170667a.webp);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    padding:480px 30px 20px;
+    background-blend-mode:overlay;
+    background-color:rgba(0,0,0,.2);
+}
+.background-link{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:1;
+    cursor:pointer;
+}
+.textbox a{
+    display:block;
+}
+.category{
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#fff;
+    font-size:15px;
+    background:#808080;
+    width:35%;
+    text-align:center;
+    padding:5px 0;
+}
+.topic{
+    margin:10px 0 0;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#fff;
+    font-size:35px;
+}
+.names-date{
+    margin:10px 0 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:28%;
+    color:#fff;
+}
+.secondnews-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.image-box{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 0 5px;
+}
+.sub-main-1{
+    width:49%;
+}
+.image-box a{
+    display:block;
+}
+.sub-box2{
+    width:49%;
+    margin-left:20px;
+}
+.news-head{
+    display:block;
+    text-decoration:none;
+    margin:2px 0 0;
+    font-size:28px;
+    width:100%;
+    color:black;
+}
+.secondnews-box img{
+    width:100%;
+}
+.color{
+    color:black;
+    width:55%;
+}
+.news-line{
+    margin:30px auto;
+    border:1px solid black;
+    width:72.5%;
+}
+/* End of News new layout */
+
+/* New  Blog List Section */
+.blog-list-section{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    padding:0 250px;
+    margin:50px 0 0;
+}
+.blog-box{
+    width:16%;
+}
+.blog-box p{
+    font-size:16px;
+}
+.blog-box a{
+    display:block;
+    text-decoration:none;
+    font-size:22px;
+    margin:10px 0 0;
+    font-weight:bold;
+    color:black;
+}
+/* End of New Blog List Section */
+
+ /* Artificial Intelligence */
+.artificial-main{     
+        width:100%;
+        padding:0 250px;
+        margin:40px 0 0;
+}
+.artificial-main h5{
+        font-size:25px;
+        font-weight:lighter;
+}
+.artificial-mainbox{
+        display:flex;
+        align-items:start;
+        justify-content:space-between;
+        width:100%;
+}
+.artificial-box{
+        width:32%;
+}
+.artificial-box img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+}
+.specification{
+        margin:10px 0;
+}
+.artificial-topic{
+        display:block;
+        text-decoration:none;
+        color:black;
+        font-size:23px;
+}
+.artificial-text{
+        margin:10px 0;
+        line-height:1.4;
+}
+.news-line2{
+        margin:30px 0 0;
+}
+/* End of Artificial Intelligence */
+
+
+/* Web Development */
+.web-mainbox{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:10px 0 0;
+}
+.web-1{
+    background-image:url(../images/benefits-of-coding-e1606911064541.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:overlay;
+    background-color:rgba(0,0,0,.4);
+    padding:200px 40px 20px;
+    width:50%;
+}
+.web-2{
+    background-image:url(../images/2020_08_Trending-Technologies-scaled.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:overlay;
+    background-color:rgba(0,0,0,.4);
+    width:50%;
+    padding:200px 40px 20px;
+}
+/* End of the Web Development */
+
+/* Categpries Section */
+.category-main{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    padding:0 250px;
+    margin:30px 0 0;
+}
+.first-category,.second-category{
+    width:46%;
+}
+.first-category img,.second-category img{
+    width:100%;
+}
+.first-category h5,.second-category h5{
+    font-size:20px;
+    font-weight:lighter;
+}
+.sub-category{
+    margin:20px 0 0;
+}
+.sub-category a{
+    display:block;
+    text-decoration:none;
+    color:black;
+}
+.sub-text{
+    font-size:15px;
+    margin:10px 0 0;
+}
+.sub-topic{
+    font-size:24px;
+    margin:10px 0 0;
+}
+.space{
+    width:27%;
+}
+.category-word{
+    margin:10px 0 0;
+    width:100%;
+    text-align:justify;
+    line-height:1.4;
+}
+
+
+/* Technology */
+.technology-box{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+    padding:0 250px;
+    margin:0;
+}
+.first-techbox,.second-techbox{
+    width:46%;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+}
+.first-techbox img,.second-techbox img{
+    width:100%;
+}
+.tech-space{
+    margin:50px auto 0;
+    width:48%;
+}
+.tech-title{
+    font-size:25px;
+    font-weight:bold;
+}
+.tech{
+    width:60%;
+}
+/* End of Technology */
+
+/* Newsletter */
+.newsletter{
+    background:linear-gradient(to right, rgba(65,105,255,0.6), rgba(255,0,0,.6));
+    padding:70px 100px;
+    margin:40px 0 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+.newsletter-text,.newsletter-form{
+    width:46%;
+    /* background:red; */
+}
+.newsletter-text h4{
+    font-size:60px;
+    color:black;
+}
+.newsletter-text p{
+    font-size:20px;
+}
+.newsletter-form{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.newsletter-form input{
+    /* width:50%; */
+    display:block;
+    padding:20px 10px;
+    border:none;
+    outline:none;
+}
+.email-address{
+    width:70%;
+}
+.newsletter-subscribe{
+    width:25%;
+    border-radius:50px;
+    background:#001f3f;
+    color:#fff;
+    font-size:20px;
+}
+/* End of Newsletter */
+/* End of the Content/Body */
+
+/* Footer */
+.footer{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+    padding:50px 250px;
+    /* background:red; */
+}
+.footer div{
+    width:30%;
+    /* margin:0 auto; */
+    /* background:green; */
+}
+.footer-heading h5{
+    font-size:20px;
+}
+.footer-heading p{
+    margin-top:20px;
+    text-align:justify;
+    line-height:1.4;
+}
+.footer-heading a{
+    display:block;
+    margin:5px 0 0;
+    text-decoration:none;
+    text-transform:capitalize;
+    font-size:15px;
+    color:black;
+}
+
+@media screen and (max-width:1000px){
+    /* The Navigation */
+    .bar,.cancel{
+        display:block;
+        width:10%;
+        color:#fff;
+        background:#001f3f;
+    }
+    .navigation{
+        padding:5px;
+        flex-direction:column;
+        align-items:start;
+    }
+    .navigation ul{
+        display:none;
+        height:100vh;
+        margin:20px 0;
+    }
+    .subscribe{
+        width:40%;
+        display:none;
+    }
+    .cancel{
+        width:20%;
+    }
+    /* End of the Navigation */
+
+    /* The Content */
+    /* New news layout */
+    .main-news-container{
+        padding:0 10px;
+        flex-direction:column;
+        margin:0;
+    }
+    .firstnews-box,.secondnews-box{
+        width:100%;
+        margin:0;
+    }
+    .firstnews-box{
+        background-position:left;
+    }
+    .names-date{
+        width:50%;
+    }
+    .secondnews-box{
+        margin:40px 0 0;
+        align-items:start;
+    }
+    .topic{
+        width:100%;
+        font-size: 30px;
+    }
+    .category{
+        width:100%;
+    }
+    .news-head{
+        font-size:20px;
+    }
+    .color{
+        width:100%;
+    }
+    .news-line{
+        width:100%;
+    }
+    /* End of  new news layout */
+
+    /* New blog list section */
+    .blog-list-section{
+        flex-wrap:wrap;
+        padding:0 10px;
+        /* background:red; */
+    }
+    .blog-box{
+        width:45%;
+        margin:10px 0;
+        /* background:green; */
+    }
+    .blog-box p{
+        font-size:15px;
+    }
+    .blog-box a{
+        font-size:19px;
+    }
+    /* End of New Blog List section */
+
+    /* Artificial Intelligence */
+    .artificial-main{
+        padding:0 10px;
+    }
+    .artificial-main h5{
+        font-size:20px;
+    }
+    .artificial-mainbox{
+        flex-direction:column;
+    }
+    .artificial-box{
+        width:100%;
+        margin-bottom:10px;
+    }
+    /* End of Artificial Intelligence */
+
+    /* Web Development */
+    .web-mainbox{
+        flex-direction:column;
+    }
+    .web-1,.web-2{
+        width:100%;
+        margin-bottom:10px;
+    }
+    /* End of Web Development */
+
+    /* Categories Section */
+    .category-main{
+        padding:0 10px;
+        flex-direction:column;
+    }
+    .first-category,.second-category{
+        width:100%;
+        margin-bottom:20px;
+    }
+    /* End of Categories Section */
+
+    /* Technology */
+    .technology-box{
+        padding:0 10px;
+        flex-direction:column;
+    }
+    .first-techbox,.second-techbox{
+        width:100%;
+        flex-direction:column;
+    }
+    .tech-space{
+        width:100%;
+    }
+    /* End of Technology */
+
+    /* Newsletter */
+    .newsletter{
+        padding:10px 10px;
+        flex-direction:column;
+    }
+    .newsletter-text,.newsletter-form{
+        width:100%;
+    }
+    .newsletter-text h4{
+        font-size:25px;
+    }
+    .newsletter-text p{
+        font-size:15px;
+        margin-top:5px;
+    }
+    .newsletter-form{
+        margin:10px 0 0;
+    }
+    .email-address{
+        width:55%;
+    }
+    .newsletter-form input{
+        padding:10px;
+    }
+    .newsletter-subscribe{
+        width:40%;
+        padding:10px;
+    }
+    /* End of Newsletter */
+
+    /* End of the  Content / Body */
+
+
+    /* Footer */
+    .footer{
+        padding:50px 10px;
+        flex-direction:column;
+    }
+    .footer div{
+        width:100%;
+        margin-bottom:20px;
+    }
+}
